@@ -30,4 +30,46 @@
                         color: crimson;
                 }
         }
+
+        .service_items_container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+
+                .service_item {
+                        flex-basis: 80%;
+                        display: flex;
+                        align-items: flex-start;
+                        justify-content: center;
+                        flex-direction: column;
+                        padding: 1.8rem;
+                        border-radius: 0.8rem;
+                        background-image: url(../img/img-1.png);
+                        background-size: cover;
+                        margin: 0.7rem 5%;
+                        position: relative;
+                        overflow: hidden;
+                        z-index: 1;
+
+                        &::after {
+                                content: "";
+                                position: absolute;
+                                left: 0;
+                                top: 0;
+                                height: 100%;
+                                width: 100%;
+                                background: linear-gradient(60deg, #29323c 0%, #485563 100%);
+                                opacity: 0.7;
+                                z-index: -1;
+                        }
+
+                        .icon_container .icon {
+                                color: crimson;
+                                width: 80px;
+                                height: 80px;
+                                margin-bottom: 1rem;
+                        }
+                }
+        }
 }

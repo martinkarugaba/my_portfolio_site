@@ -52,6 +52,25 @@ p {
         }
 }
 
+.cta {
+        display: inline-block;
+        padding: 0.7rem 1.5rem;
+        color: #fff;
+        background: transparent;
+        border: 2px solid crimson;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
+        margin-top: 1rem;
+        transition: all 0.3s ease;
+
+        &:hover {
+                background: crimson;
+        }
+}
+
 @import "./hero";
 @import "./services";
 @import "./projects";
+@import "./about";
+@import "./contact";

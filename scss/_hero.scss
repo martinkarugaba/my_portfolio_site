@@ -9,10 +9,21 @@
         .hero {
                 min-width: 1200px;
                 margin: 0 auto;
-                padding: 0 50px;
+                padding: 0 2rem;
                 justify-content: flex-start;
+
+                //!Hack=====================
+                .cta {
+                        margin-left: -0.5rem;
+
+                        @media screen and (min-width: 768px) {
+                                font-size: 3rem;
+                                margin-left: 2rem;
+                        }
+                }
         }
 
+        // hero section overlay
         &::after {
                 content: "";
                 position: absolute;
@@ -32,6 +43,15 @@
                 color: transparent;
                 animation: text_reveal 0.5s ease forwards;
                 animation-delay: 1s;
+
+                //!Hack====================
+                margin-left: -0.5rem;
+                font-size: 3.2rem;
+
+                @media screen and (min-width: 768px) {
+                        font-size: 5rem;
+                        margin-left: 2rem;
+                }
 
                 span {
                         position: absolute;
@@ -69,11 +89,9 @@
                 }
         }
         // For more information about this animation, check out the youtube tutorial
-
-       
 }
 
-// hero animation
+//* hero animations
 @keyframes text_reveal_box {
         50% {
                 width: 100%;
@@ -97,7 +115,3 @@
                 font-weight: 500;
         }
 }
-
-// End hero animation
-
-//*End Hero Section

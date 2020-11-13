@@ -11,6 +11,11 @@ html {
         font-family: sans-serif;
 }
 
+// !Check this line later
+body{
+        overflow-x: hidden;
+}
+
 a {
         text-decoration: none;
 }
@@ -69,8 +74,28 @@ p {
         }
 }
 
+.icon {
+        // width: 50px;
+        margin: 0 auto;
+        margin-bottom: 0.6rem;
+        font-size: 2rem;
+}
+
+.brand {
+        h1 {
+                font-size: 2rem;
+                text-transform: uppercase;
+                color: #fff;
+
+                span {
+                        color: crimson;
+                }
+        }
+}
+
 @import "./hero";
 @import "./services";
 @import "./projects";
 @import "./about";
 @import "./contact";
+@import "./footer";

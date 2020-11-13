@@ -5,6 +5,11 @@
                 max-width: 1200px;
                 margin: 0 auto;
                 padding: 6.25rem 0; // 100px 0
+                background: #e7e5e5;
+
+
+                @media screen and (min-width: 768px) {
+                }
 
                 .projects_header h1 {
                         margin-bottom: 3rem;
@@ -26,6 +31,18 @@
                                 overflow: hidden;
                                 border-radius: 0.6rem;
 
+                                @media screen and (min-width: 768px) {
+                                        height: 400px;
+                                        margin: 0;
+                                        width: 100%;
+                                        border-radius: 0;
+                                        flex-direction: row;
+
+                                        &:nth-child(even) {
+                                                flex-direction: row-reverse;
+                                        }
+                                }
+                                
                                 &:hover .project_img img {
                                         transform: scale(1.1);
                                 }
@@ -42,6 +59,10 @@
                         justify-content: center;
                         flex-direction: column;
                         color: #fff;
+
+                        @media screen and (min-width: 768px) {
+                                height: 100%;
+                        }
 
                         h1 {
                                 font-size: 4rem;
@@ -64,6 +85,10 @@
                         height: 300px;
                         overflow: hidden;
                         position: relative;
+
+                        @media screen and (min-width: 768px) {
+                                height: 100%;
+                        }
 
                         &::after {
                                 content: "";

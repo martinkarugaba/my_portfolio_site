@@ -6,11 +6,22 @@
                 margin: 0 auto;
                 padding: 6.25rem -1.25rem;
                 padding-bottom: 3rem;
-                // background-color: lightgreen;
+                background: #ccc;
+
+                @media screen and (min-width: 768px) {
+                        flex-direction: row;
+                }
 
                 .image_section {
                         width: 250px;
                         height: 360px;
+                        // background-color: lightgreen;
+
+                        @media screen and (min-width: 768px) {
+                                width: 600px;
+                                height: 400px;
+                                padding-left: 3.7rem;
+                        }
 
                         .image_wrapper {
                                 position: relative;
@@ -27,12 +38,27 @@
                                         width: 98%;
                                         border: 7px solid crimson;
                                         z-index: -1;
+
+                                        @media screen and (min-width: 768px) {
+                                                left: -45px;
+                                                top: 24px;
+                                                width: 98%;
+                                                height: 98%;
+                                                border: 10px solid crimson;
+                                        }
                                 }
                         }
                 }
 
                 .about_info {
                         width: 100%;
+
+                        @media screen and (min-width: 768px) {
+                                text-align: left;
+                                padding: 1.9rem;
+
+                                background-color: cyan;
+                        }
 
                         h2 {
                                 font-size: 1.5rem;

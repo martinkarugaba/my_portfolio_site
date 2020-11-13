@@ -5,6 +5,7 @@
                 max-width: 1500px;
                 margin: 0 auto;
                 padding: 5rem 0;
+                background: #ccc;
         }
 
         .service_items_container {
@@ -28,6 +29,11 @@
                         position: relative;
                         overflow: hidden;
                         z-index: 1;
+
+                        @media screen and (min-width: 768px) {
+                                flex-basis: 45%;
+                                margin: 1rem;
+                        }
 
                         &::after {
                                 content: "";

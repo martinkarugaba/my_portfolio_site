@@ -1,82 +1,82 @@
 #about {
-        .about {
-                flex-direction: column-reverse;
-                text-align: center;
-                margin: 1200px;
-                margin: 0 auto;
-                padding: 6.25rem -1.25rem;
-                padding-bottom: 3rem;
-                background: #ccc;
+  .about {
+    flex-direction: column-reverse;
+    text-align: center;
+    margin: 1200px;
+    margin: 0 auto;
+    padding: 6.25rem -1.25rem;
+    padding-bottom: 3rem;
+    background: #ccc;
 
-                @media screen and (min-width: 768px) {
-                        flex-direction: row;
-                }
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+    }
 
-                .image_section {
-                        width: 250px;
-                        height: 360px;
-                        // background-color: lightgreen;
+    .image_section {
+      width: 250px;
+      height: 360px;
+      // background-color: lightgreen;
 
-                        @media screen and (min-width: 768px) {
-                                width: 600px;
-                                height: 400px;
-                                padding-left: 3.7rem;
-                        }
+      @media screen and (min-width: 768px) {
+        width: 600px;
+        height: 400px;
+        padding-left: 3.7rem;
+      }
 
-                        .image_wrapper {
-                                position: relative;
-                                border: 10px solid #fff;
-                                height: 100%;
-                                width: 100%;
+      .image_wrapper {
+        position: relative;
+        border: 10px solid #fff;
+        height: 100%;
+        width: 100%;
 
-                                &::after {
-                                        content: "";
-                                        position: absolute;
-                                        left: -33px;
-                                        top: 19px;
-                                        height: 98%;
-                                        width: 98%;
-                                        border: 7px solid crimson;
-                                        z-index: -1;
+        &::after {
+          content: '';
+          position: absolute;
+          left: -33px;
+          top: 19px;
+          height: 98%;
+          width: 98%;
+          border: 7px solid crimson;
+          z-index: -1;
 
-                                        @media screen and (min-width: 768px) {
-                                                left: -45px;
-                                                top: 24px;
-                                                width: 98%;
-                                                height: 98%;
-                                                border: 10px solid crimson;
-                                        }
-                                }
-                        }
-                }
-
-                .about_info {
-                        width: 100%;
-
-                        @media screen and (min-width: 768px) {
-                                text-align: left;
-                                padding: 1.9rem;
-
-                                background-color: cyan;
-                        }
-
-                        h2 {
-                                font-size: 1.5rem;
-                                font-weight: 500;
-                                letter-spacing: 0.2rem;
-                                margin-bottom: 0.6rem;
-                        }
-
-                        p {
-                                margin-bottom: 1.25rem;
-                        }
-
-                        .cta {
-                                color: #000;
-                                margin-bottom: 3rem;
-                                padding: 0.6rem 1.25rem;
-                                font-size: 2rem;
-                        }
-                }
+          @media screen and (min-width: 768px) {
+            left: -45px;
+            top: 24px;
+            width: 98%;
+            height: 98%;
+            border: 10px solid crimson;
+          }
         }
+      }
+    }
+
+    .about_info {
+      width: 100%;
+
+      @media screen and (min-width: 768px) {
+        text-align: left;
+        padding: 1.9rem;
+
+        background-color: cyan;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+        font-weight: 500;
+        letter-spacing: 0.2rem;
+        margin-bottom: 0.6rem;
+      }
+
+      p {
+        margin-bottom: 1.25rem;
+      }
+
+      .cta {
+        color: #000;
+        margin-bottom: 3rem;
+        padding: 0.6rem 1.25rem;
+        font-size: 2rem;
+      }
+    }
+  }
 }

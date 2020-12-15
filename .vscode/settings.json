@@ -3,5 +3,6 @@
     "editor.fontSize": 17,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "prettier.tabWidth": 2,
-    "prettier.printWidth": 60
+    "prettier.printWidth": 62,
+    "better-comments.multilineComments": true
 }

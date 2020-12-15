@@ -1,81 +1,86 @@
 #services {
-        .services {
-                flex-direction: column;
-                text-align: center;
-                max-width: 1500px;
-                margin: 0 auto;
-                padding: 5rem 0;
-                background: #ccc;
-        }
+  .services {
+    flex-direction: column;
+    text-align: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 5rem 0;
+    background: #ebebeb;
+  }
 
-        .service_items_container {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                flex-wrap: wrap;
-                margin-top: 2.5rem;
-                padding: 2rem;
+  .service_items_container {
+    @include flexCenter();
+    flex-wrap: wrap;
+    margin-top: 2.5rem;
+    padding: 2rem;
 
-                @media only screen and (min-width: 1200px) {
-                        
-                }
+    .service_item {
+      flex-basis: 80%;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-direction: column;
+      padding: 1rem;
+      border-radius: 0.8rem;
+      background-image: url(../img/img-1.png);
+      background-size: cover;
+      margin: 0.7rem 5%;
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
 
-                .service_item {
-                        flex-basis: 80%;
-                        display: flex;
-                        align-items: flex-start;
-                        justify-content: center;
-                        flex-direction: column;
-                        padding: 1.8rem;
-                        border-radius: 0.8rem;
-                        background-image: url(../img/img-1.png);
-                        background-size: cover;
-                        margin: 0.7rem 5%;
-                        position: relative;
-                        overflow: hidden;
-                        z-index: 1;
+      @media only screen and (min-width: 768px) {
+        flex-basis: 45%;
+        margin: 1rem;
+      }
 
-                        @media only screen and (min-width: 768px) {
-                                flex-basis: 45%;
-                                margin: 1rem;
-                        }
+      @media only screen and (min-width: 1200px) {
+        flex-basis: 22%;
+        margin: 1.5%;
+        height: 70%;
+      }
 
-                        @media only screen and (min-width: 1200px) {
-                                flex-basis: 22%;
-                                margin: 1.5%;
-                                height: 70%;
-                        }
+      &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(
+          60deg,
+          #29323c 0%,
+          #485563 100%
+        );
+        opacity: 0.7;
+        z-index: -1;
+      }
 
-                        &::after {
-                                content: "";
-                                position: absolute;
-                                left: 0;
-                                top: 0;
-                                height: 100%;
-                                width: 100%;
-                                background: linear-gradient(60deg, #29323c 0%, #485563 100%);
-                                opacity: 0.7;
-                                z-index: -1;
-                        }
+      .icon_container .icon {
+        color: crimson;
+        width: 50px;
+        height: 50px;
+        margin-bottom: 1rem;
+      }
 
-                        .icon_container .icon {
-                                color: crimson;
-                                width: 80px;
-                                height: 80px;
-                                margin-bottom: 1rem;
-                        }
+      h2 {
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: crimson;
+        margin-bottom: 0.7rem;
+        text-transform: uppercase;
+      }
 
-                        h2 {
-                                font-size: 2rem;
-                                color: #fff;
-                                margin-bottom: 0.7rem;
-                                text-transform: uppercase;
-                        }
+      p {
+        color: #fff;
+        text-align: left;
+      }
+    }
 
-                        p {
-                                color: #fff;
-                                text-align: left;
-                        }
-                }
-        }
+    .cta {
+      padding: 1rem 2rem;
+      color: #212121;
+      font-size: 1rem;
+    }
+  }
 }

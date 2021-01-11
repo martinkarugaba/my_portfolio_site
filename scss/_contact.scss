@@ -1,53 +1,70 @@
 #contact {
-    .contact {
-        flex-direction: column;
-        // max-width: 1200px;
-        // padding-top: 3rem;
-        background: #e7e5e5;
+  .contact {
+    flex-direction: column;
+    // max-width: 1200px;
+    // padding-top: 3rem;
+    background: #e7e5e5;
+    padding: 3.2rem;
 
-        .contact_items {
-            display: flex;
-            width: 100%;
-            padding: 1.25rem;
+    .contact_items {
+      @include flexCenter(column);
+      width: 100%;
+      padding: 1.25rem;
 
-            @media screen and (min-width: 768px) {
-                flex-direction: row;
-            }
+      @media screen and (min-width: 768px) {
+        flex-direction: row;
+      }
 
-            .contact_item {
-                width: 80%;
-                padding: 1.25rem;
-                text-align: center;
-                border-radius: 0.6rem;
-                padding: 1.9rem;
-                margin: 1.9rem;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: column;
-                box-shadow: 0px 0px 18px 0px #0000002c;
-                transition: box-shadow 0.3s ease;
+      .contact_item {
+        @include flexCenter(row);
+        width: 95%;
+        padding: 1rem .5rem;
+        margin: 1rem 0;
+        text-align: left;
+        border-radius: 0.6rem;
+        box-shadow: 0px 0px 18px 0px #0000002c;
+        transition: box-shadow 0.3s ease;
 
-                @media screen and (min-width: 768px) {
-                    width: 30%;
-                }
-
-                &:hover {
-                    box-shadow: 0px 0px 5px 0px #0000002c;
-                }
-
-                h1 {
-                    font-size: 2.5rem;
-                    font-weight: 500;
-                    margin-bottom: 0.3rem;
-                }
-
-                h2 {
-                    font-size: 1.3rem;
-                    line-height: 2rem;
-                    font-weight: 500;
-                }
-            }
+        @media screen and (min-width: 768px) {
+          width: 30%;
         }
+
+        &:hover {
+          box-shadow: 0px 0px 5px 0px #0000002c;
+        }
+
+        .icon_container{
+          @include flexCenter(column);
+          width: 20%;
+
+          .icon{
+          color: crimson;
+          font-size: 1.8rem;
+          margin: 0;
+          padding: 0;
+        }
+        }
+
+        .contact_info{
+          width: 80%;
+        }
+
+        h1 {
+          font-size: 1.5rem;
+          font-weight: 500;
+          // margin-bottom: 0.3rem;
+        }
+
+        h2 {
+          font-size: 1rem;
+          line-height: 2rem;
+          font-weight: 400;
+        }
+
+        &:nth-child(2) .contact_info h2{
+          font-size: 1rem;
+        }
+      }
     }
+  }
 }

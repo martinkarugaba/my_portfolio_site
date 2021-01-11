@@ -8,6 +8,7 @@ hamburger.addEventListener('click', () => {
   mobile_menu.classList.toggle('active');
 });
 
+/***scroll effect */
 document.addEventListener('scroll', () => {
   let scroll_position = window.scrollY;
 

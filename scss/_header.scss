@@ -53,8 +53,7 @@
                 height: 100vh;
                 z-index: 1;
                 overflow-x: hidden;
-                @include flexCenter;
-                flex-direction: column;
+                @include flexCenter(column);
                 background: rgb(32, 30, 30);
                 transition: 0.5s ease left;
 
@@ -132,7 +131,7 @@
         position: relative;
         cursor: pointer;
         transform: scale(0.8);
-        @include flexCenter;
+        @include flexCenter(row);
         margin-right: 0.5rem;
 
         @media only screen and (min-width: 1200px) {

@@ -11,12 +11,19 @@
     padding-bottom: 0.6rem;
     text-align: center;
 
+    .brand h1{
+    font-family: $font-family;
+      font-weight: 400;
+    }
+
     h2 {
       color: #fff;
       font-weight: 500;
-      font-size: 1.8rem;
+      font-size: 1.2rem;
       letter-spacing: 0.1rem;
       margin: 0.6rem 0;
+      margin-bottom: 1.1rem;
+      line-height: 1.7rem;
     }
 
     .social_icons {
@@ -26,19 +33,23 @@
       width: 50%;
       margin: 0 auto;
 
+
       .icon {
-        filter: grayscale(1);
-        transition: filter 0.3s ease;
+        // filter: grayscale(1);
+        color: rgba(220, 20, 60, .7);
+        transition: color 0.3s ease;
 
         &:hover {
-          filter: grayscale(0);
+          // filter: grayscale(0);
+          color: rgba(220, 20, 60, 0);
         }
       }
     }
 
     p {
       color: #fff;
-      font-size: 1.3rem;
+      font-size: 1rem;
+      margin-bottom: 1.1rem;
     }
   }
 }

@@ -8,18 +8,30 @@
     <title>Martin Karugaba | Home</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@100;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gugi&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./font-awesome/all.css" />
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <!--*=================== Header section================================= -->
+    <!--* header -->
     <section id="header">
       <div class="header container">
+        <!--* nav bar -->
         <nav class="nav-bar">
-          <!-- Logo -->
+          <!--* Logo -->
           <div class="brand">
             <a href="#hero"
               ><h1>
@@ -28,12 +40,17 @@
               </h1></a
             >
           </div>
+          <!--* end logo  -->
 
-          <!--* Navlist -->
+          <!--* nav links container-->
           <div class="nav-list">
+            <!--* humburger -->
             <div class="hamburger">
               <div class="bar"></div>
             </div>
+            <!--* end humburger -->
+
+            <!--* nav links -->
             <ul>
               <li>
                 <a href="#hero" data-after="Home">Home</a>
@@ -51,84 +68,104 @@
                 <a href="#contact" data-after="Contact">Contact</a>
               </li>
             </ul>
+            <!--* end nav links -->
           </div>
+          <!--* end nav links container -->
         </nav>
+        <!--* end nav bar -->
       </div>
     </section>
-    <!--*=====================================End Header section================================= -->
+    <!--* end header -->
 
-    <!-- *============================ Hero section =======================================-->
+    <!-- * hero section -->
     <section id="hero">
-      <section class="hero container">
-        <section>
-            <h1>Hello, <span></span></h1>
-            <h1>My name is <span></span></h1>
-            <h1>Martin, <span></span></h1>
-          <p class="short_description">I design and build websites, and I love what I do.</p>
+      <!--* hero container -->
+      <div class="hero container">
+        <div>
+          <!--* greeting -->
+          <h1>Hello, <span></span></h1>
+          <h1>My name is <span></span></h1>
+          <h1>Martin, <span></span></h1>
+          <!--* end greeting -->
 
-          <a href="#" class="cta"
-              >what I do</a
-            >
+          <!--* subheading -->
+          <p class="sub-heading">
+            I design and build websites and web applications
+          </p>
+          <!--* end sub heading -->
 
-        </section>
-      </section>
+          <!--* who I am -->
+          <a href="#about" class="cta">Who I am</a>
+          <!--* end who I am -->
+        </div>
+      </div>
+      <!--* end hero container -->
     </section>
-    <!-- *=========================== End Hero section =======================================-->
+    <!-- * end hero-->
 
-    <!--*============================== Services section ==================================-->
+    <!--* services-->
     <section id="services">
+      <!--* services container -->
       <section class="services container">
         <header class="services_header">
-          <h1 class="section_title">What I do</h1>
+          <h2 class="section_title">What <span>I</span> do</h2>
           <div class="line"></div>
         </header>
 
+        <!--* service items container -->
         <section class="service_items_container">
+          <!--* web design & development -->
           <section class="service_item">
-            <h2 style="text-align: center;">Web design & development</h2>
+            <h3 style="text-align: center">
+              Web design & development
+            </h3>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing
-              elit. Corrupti, ipsum? Nihil soluta amet error
-              veritatis.
+              Do you want an online presence for your business or you
+              have an existing website but you hardly get any
+              visitors? Contact me and let's take your website to
+              another level.
             </p>
           </section>
+          <!--* end web design & development -->
 
-          <!-- <section class="service_item">
-            <h2>E-commerce</h2>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing
-              elit. Corrupti, ipsum? Nihil soluta amet error
-              veritatis.
-            </p>
-          </section> -->
-
+          <!--* wordpress -->
           <section class="service_item">
-            <h2>Wordpress</h2>
+            <h3>Wordpress</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing
-              elit. Sequi nihil ratione dolorem voluptas ea
-              repellendus.
+              Do you need a website and have a small budget, then
+              wordpress is the the right choice? Contact me and let's
+              give your business an online presence at an affordable
+              cost!
             </p>
           </section>
+          <!--* end wordpress -->
 
+          <!--* consulting -->
           <section class="service_item">
-            <h2>Consulting</h2>
+            <h3>Consulting</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing
-              elit. Sequi nihil ratione dolorem voluptas ea
-              repellendus.
+              I need a website and I don't know where to start! Should
+              I even have a website for my business. You don't have to
+              worry. Give me a call or send me an email and let's
+              arrange a consultation session for you! Don't worry, I
+              got you!
             </p>
           </section>
+          <!--* end consulting -->
         </section>
+        <!--* end service items container -->
 
+        <!--*cta -->
         <a href="#projects" class="cta">See my work</a>
       </section>
+      <!--* end services container -->
     </section>
-    <!--*========================= Services section ==================================-->
+    <!--* end services section -->
 
-    <!--*================================== About Section ================================ -->
+    <!--* about section -->
     <section id="about">
       <section class="about container">
+        <!--* image -->
         <div class="image_section">
           <div class="image_wrapper">
             <img
@@ -137,15 +174,14 @@
             />
           </div>
         </div>
-
+        <!--* end image -->
+        <!--* info -->
         <div class="about_info">
-          <h1 class="section_title">Who I <span> am</span></h1>
-          <p class="sub_heading">
-            Front End
-            Web Developer, based out of Fort-portal, Uganda.
+          <h2 class="section_title">About <span> me</span></h2>
+          <p class="title">
+            Front End Web Developer, based out of Fort-portal, Uganda.
           </p>
-
-          <p class="about_paragraph">
+          <p class="info">
             I am a self taught Front End Web Developer who has been
             writing code for two years now. I am proficient in
             technologies like HTML5, CSS3, JavaScript, ReactJS. I've
@@ -161,66 +197,50 @@
               ><i class="fab fa-linkedin icon linked-in"></i> LinkedIn
               Profile</a
             >
-            <a href="#" class="cta"
-              ><i class="fab fa-github icon github"></i> Github
-              Profile</a
-            >
           </div>
         </div>
+        <!--* end info -->
       </section>
     </section>
-    <!--*===================================End About Section================================ -->
+    <!--* end about section -->
 
-    <!--*================================ Projects Section================================-->
+    <!--* projects section -->
     <section id="projects">
       <section class="projects container">
         <header class="projects_header">
-          <h1 class="section_title">My <span>recent</span> work</span></h1>
+          <h1 class="section_title">Recent <span>projects</span></h1>
 
-          <p>Here are a few projects I've worked on recently. Want to see more? <a href="#">Email me.</a></p>
+          <!--<p>Here are a few projects I've worked on recently. Want to see more? <a href="#">Email me.</a></p>-->
         </header>
         <section class="all_projects">
-          <!-- first item -->
-          <section class="project_item">
+          <!--* first project item -->
+          <!--<div class="project_item">
             <div class="project_info">
               <h2>Project 1</h2>
               <p class="sub_heading">Coding is love</p>
               <p class="project_about">
-                Lorem ipsum dolor, sit amet consectetur adipisicing
-                elit. Soluta, aspernatur nesciunt? Ad, omnis?
-                Inventore non reprehenderit odit iusto perspiciatis
-                corporis et libero rem facilis recusandae. Tenetur
-                laborum hic totam animi.
+                projects coming soon...
               </p>
             </div>
             <div class="project_img">
               <img src="./img/img-1.png" alt="img" />
             </div>
-          </section>
+          </div>-->
+          <!--* end first project item -->
 
-          <!-- second item -->
-          <section class="project_item">
-            <div class="project_info">
-              <h2>Project 1</h2>
-              <p class="sub_heading">Coding is love</p>
-              <p class="project_about">
-                Lorem ipsum dolor, sit amet consectetur adipisicing
-                elit. Soluta, aspernatur nesciunt? Ad, omnis?
-                Inventore non reprehenderit odit iusto perspiciatis
-                corporis et libero rem facilis recusandae. Tenetur
-                laborum hic totam animi.
-              </p>
-            </div>
-            <div class="project_img">
-              <img src="./img/img-1.png" alt="img" />
-            </div>
-          </section>
+          <div class="placeholder">
+            <h3>projects coming soon...</h3>
+          </div>
         </section>
+        <a href="#" class="cta github-profile"
+          ><i class="fab fa-github icon github"></i>
+          <span>Github Profile</span></a
+        >
       </section>
     </section>
-    <!--*================================= End Projects Section================================-->
+    <!--* end projects section -->
 
-    <!--*================================ Contact Section================================-->
+    <!--* contact section -->
     <section id="contact">
       <section class="contact container">
         <header>
@@ -228,12 +248,11 @@
         </header>
 
         <section class="contact_items">
-
           <div class="contact_item">
             <div class="icon_container">
               <i class="fas fa-phone-alt icon"></i>
             </div>
-            <div class="contact_info">
+            <div class="info">
               <h1>Phone</h1>
               <h2>+1 234 123 1234</h2>
               <h2>+1 234 123 1234</h2>
@@ -244,7 +263,7 @@
             <div class="icon_container">
               <i class="fas fa-envelope icon"></i>
             </div>
-            <div class="contact_info">
+            <div class="info">
               <h1>Email</h1>
               <h2>martinkarugaba22@gmail.com</h2>
               <h2>martinkarugabaweb@gmail.com</h2>
@@ -255,7 +274,7 @@
             <div class="icon_container">
               <i class="fas fa-map-marker icon"></i>
             </div>
-            <address class="contact_info">
+            <address class="info">
               <h1>Address</h1>
               <h2>Fort-portal</h2>
               <h2>Uganda</h2>
@@ -264,16 +283,17 @@
         </section>
       </section>
     </section>
-    <!--*================================End Contact Section================================-->
+    <!--* end contact section -->
 
-    <!--*================================Footer Section================================-->
+    <!--* footer section -->
     <footer id="footer">
       <section class="footer container">
         <div class="brand">
-          <h1>
-            <span>M</span>artin <span>K</span>arugaba
-          </h1>
-          <h2>Your Complete Web,<br /> Solution</h2>
+          <h1><span>M</span>artin <span>K</span>arugaba</h1>
+          <h2>
+            Your Complete Web,<br />
+            Solution
+          </h2>
 
           <!-- <p>Learning and levelin up, one project at a time</p> -->
 
@@ -299,12 +319,11 @@
               </a>
             </div>
           </div>
-          <p>Handcrafted by me &copy; 2020</p>
+          <p>Handcrafted by me &copy; <span id="date">2020</span></p>
         </div>
       </section>
     </footer>
-    <!--*================================EndFooter Section================================-->
-
+    <!--* end footer section -->
     <script src="/font-awesome/all.js"></script>
     <script src="./JS/app.js"></script>
   </body>

@@ -17,12 +17,107 @@
     justify-content: flex-start;
     font-family: 'Roboto', sans-serif;
 
+    //* hero section overlay
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      z-index: -1;
+    }
+
     @media only screen and (min-width: 1200px) {
       @include flexCenter(row);
     }
 
-    //* heading container
+    //* greeting
+    h1 {
+      font-family: 'Roboto', sans-serif;
+      font-family: 'Gugi', cursive;
 
+      display: block;
+      width: fit-content;
+      font-size: 2.5rem;
+      position: relative;
+      color: transparent;
+      animation: text_reveal 0.5s ease forwards;
+      animation-delay: 1s;
+      line-height: 3.2rem;
+
+      @media screen and (min-width: 768px) {
+        font-size: 5rem;
+        margin-left: 2rem;
+      }
+
+      span {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 0;
+        background: crimson;
+        animation: text_reveal_box 1s ease-in-out;
+        animation-delay: 0.3s;
+      }
+
+      //* Make the animation sequential
+      &:nth-child(1) {
+        animation-delay: 1s;
+
+        span {
+          animation-delay: 0.5s;
+        }
+      }
+      &:nth-child(2) {
+        animation-delay: 2s;
+
+        span {
+          animation-delay: 1.5s;
+        }
+      }
+      &:nth-child(3) {
+        animation: name_reveal ease forwards;
+        animation-delay: 3s;
+
+        span {
+          animation-delay: 2.5s;
+        }
+      }
+    }
+    //* end greeting
+
+    //* sub-heading
+    .sub-heading {
+      font-family: 'Roboto', sans-serif;
+      color: #d8d8d8;
+      font-size: 1.3rem;
+      font-weight: 300;
+      line-height: 2rem;
+      margin: 0.2rem 0 0 0.2rem;
+      letter-spacing: 0.01rem;
+      width: 70%;
+
+      @media only screen and (min-width: 768px) {
+        font-size: 1.2rem;
+        letter-spacing: 0.4rem;
+      }
+
+      @media only screen and (min-width: 1200px) {
+        letter-spacing: 0.05rem;
+        color: #e9e9e9;
+        margin: 1rem 0;
+        margin-top: 1.5rem;
+        font-size: 1.5rem;
+        font-weight: 400;
+      }
+    }
+    //* end sub-heading
+
+    //* heading container
     section {
       margin-left: -1rem;
 
@@ -33,164 +128,33 @@
       @media only screen and (min-width: 1200px) {
         text-align: center;
       }
-
-      .headings_container{
-        @include flexCenter(column);
-        width: 700px;
-      }
-
-      h1 {
-        font-weight: 500;
-        margin-left: 0;
-
-        @media only screen and (min-width: 768px) {
-          font-size: 4rem;
-          font-weight: 700;
-          display: inline-block;
-          margin-left: 0;
-
-          &:nth-child(2) {
-            margin-left: 1rem;
-            text-transform: lowercase;
-          }
-
-          &:nth-child(3) {
-            margin-left: 1rem;
-          }
-        }
-
-        @media only screen and (min-width: 1200px) {
-          // font-size: 4.5rem;
-          // font-weight: 700;
-          // display: inline-block;
-          // margin-left: 0;
-
-          // &:nth-child(2) {
-          //   margin-left: 1rem;
-          //   text-transform: lowercase;
-          // }
-
-          // &:nth-child(3) {
-          //   margin-left: 1rem;
-          // }
-        }
-      }
-
-      //* short description
-
-      .short_description {
-        font-family: 'Roboto', sans-serif;
-        color: #fff;
-        font-size: 1.5rem;
-        font-weight: 300;
-        line-height: 2rem;
-        margin: 0.2rem 0 0 0.2rem;
-        letter-spacing: 0.01rem;
-
-        @media only screen and (min-width: 768px) {
-          font-size: 1.2rem;
-          letter-spacing: 0.4rem;
-        }
-
-        @media only screen and (min-width: 1200px) {
-          letter-spacing: 0.05rem;
-          color: #e9e9e9;
-          margin: 1rem 0;
-          margin-top: 1.5rem;
-          font-size: 1.5rem;
-          font-weight: 400;
-        }
-      }
-    }
-
-    // * call to action
-
-    .cta {
-      margin: 0.5rem 0 0 0.2rem;
-      color: rgb(212, 212, 212);
-      font-size: 1.2rem;
-      font-weight: 500;
-
-      @media screen and (min-width: 768px) {
-        font-size: 3rem;
-      }
-
-      @media screen and (min-width: 1200px) {
-        font-size: 1.3rem;
-        font-weight: 500;
-        margin: 0;
-        padding: .8rem 1.7rem;
-        color: #f1f1f1;
-      }
+      // For more information about this animation, check out the youtube tutorial
     }
   }
 
-  //* hero section overlay
+  // * call to action
 
-  &::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    z-index: -1;
-  }
-
-  h1 {
-    display: block;
-    width: fit-content;
-    font-size: 3rem;
-    position: relative;
-    color: transparent;
-    animation: text_reveal 0.5s ease forwards;
-    animation-delay: 1s;
+  .cta {
+    margin: 1rem 0 0 0.2rem;
+    color: rgb(212, 212, 212);
+    font-size: 1.2rem;
+    font-weight: 500;
 
     @media screen and (min-width: 768px) {
-      font-size: 5rem;
-      margin-left: 2rem;
+      font-size: 3rem;
     }
 
-    span {
-      position: absolute;
-      left: 0;
-      top: 0;
-      height: 100%;
-      width: 0;
-      background: crimson;
-      animation: text_reveal_box 1s ease-in-out;
-      animation-delay: 0.3s;
-    }
-
-    //Make the animation sequential
-    &:nth-child(1) {
-      animation-delay: 1s;
-
-      span {
-        animation-delay: 0.5s;
-      }
-    }
-    &:nth-child(2) {
-      animation-delay: 2s;
-
-      span {
-        animation-delay: 1.5s;
-      }
-    }
-    &:nth-child(3) {
-      animation: name_reveal ease forwards;
-      animation-delay: 3s;
-
-      span {
-        animation-delay: 2.5s;
-      }
+    @media screen and (min-width: 1200px) {
+      font-size: 1.3rem;
+      font-weight: 500;
+      margin: 0;
+      padding: 0.8rem 2.5rem;
+      color: #f1f1f1;
     }
   }
-  // For more information about this animation, check out the youtube tutorial
 }
 
-//* Hero animation
+//* text reveal box
 @keyframes text_reveal_box {
   50% {
     width: 100%;
@@ -202,15 +166,17 @@
   }
 }
 
+//* text reveal
 @keyframes text_reveal {
   100% {
-    color: #fff;
+    color: #d8d8d8;
   }
 }
 
+//* name reveal
 @keyframes name_reveal {
   100% {
     color: crimson;
-    font-weight: 500;
+    font-weight: 300;
   }
 }

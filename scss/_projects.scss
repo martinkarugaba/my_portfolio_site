@@ -18,6 +18,10 @@
       justify-content: center;
       align-items: center;
 
+      .placeholder{
+        @include flexCenter(column);
+      }
+
       .project_item {
         @include flexCenter(column);
         flex: 1;
@@ -46,6 +50,16 @@
         &:hover .project_img img {
           transform: scale(1.1);
         }
+      }
+    }
+
+    .cta.github-profile{
+      @include flexCenter(row);
+      justify-content: space-between;
+      width: 220px;
+
+      .icon{
+        margin: 0 .5rem;
       }
     }
 

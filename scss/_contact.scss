@@ -5,13 +5,16 @@
     background: #e7e5e5;
     padding: 1rem 0.8rem;
 
+    @media screen and (min-width: 768px) {
+      padding: 1rem 0;
+    }
+
     .contact_items {
       @include flexCenter(column);
       width: 100%;
-      //padding: 1.25rem;
 
       @media screen and (min-width: 768px) {
-        flex-direction: row;
+        @include flexCenter(column);
       }
 
       .contact_item {
@@ -25,7 +28,8 @@
         transition: box-shadow 0.3s ease;
 
         @media screen and (min-width: 768px) {
-          width: 30%;
+          @include flexCenter(row);
+          width: 50%;
         }
 
         &:hover {
@@ -48,12 +52,17 @@
           @include flexCenter(column);
           margin-top: 0.8rem;
           width: 80%;
+
+          @media screen and (min-width: 768px) {
+            //@include flexCenter(column);
+            align-items: flex-start;
+            width: 50%;
+          }
         }
 
         h1 {
           font-size: 1.5rem;
           font-weight: 500;
-          // margin-bottom: 0.3rem;
         }
 
         h2 {

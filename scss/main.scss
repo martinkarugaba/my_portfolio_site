@@ -59,7 +59,6 @@ p {
 
 .section_title {
   font-family: $font-family;
-  font-family: 'Gugi', cursive;
   font-weight: 500;
   font-size: 2.8rem;
   color: #000;
@@ -84,6 +83,7 @@ p {
   padding: 0.7rem 1.7rem;
   margin-top: 1rem;
   transition: all 0.3s ease;
+  font-weight: 300;
 
   &:hover {
     background: crimson;

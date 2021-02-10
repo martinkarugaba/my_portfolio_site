@@ -67,8 +67,6 @@
       //* service item h2
 
       h3 {
-        font-family: 'Gugi', cursive;
-
         font-size: 1.5rem;
         font-weight: 500;
         color: crimson;
@@ -78,9 +76,11 @@
 
       p {
         color: #fff;
+        font-size: 1.2rem;
         text-align: center;
         font-family: $font-family;
         font-weight: 300;
+        padding: 0 1rem;
       }
     }
   }

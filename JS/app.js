@@ -11,7 +11,7 @@ hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('active');
   mobile_menu.classList.toggle('active');
 });
- 
+
 //* scroll effect
 document.addEventListener('scroll', () => {
   let scroll_position = window.scrollY;
@@ -32,3 +32,4 @@ menu_item.forEach((item) =>
 
 //* dynamic date
 dateContainer.innerHTML = newDate().getFullYear();
+console.log('woo hoo!!');

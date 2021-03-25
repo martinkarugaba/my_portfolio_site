@@ -1,38 +1,43 @@
 #services {
+  max-width: 1500px;
   .services {
     flex-direction: column;
-    max-width: 1500px;
     margin: 0 auto;
     padding: 3.2rem 0;
-    background-color: #000000e6;
+    background-color: #fff;
+    //background: linear-gradient(60deg, #29323c 0%, #485563 100%);
+
+    @media screen and (min-width: 1200px) {
+      padding: 6rem 0;
+      margin: 0;
+    }
 
     .services_header {
       @include flexCenter(column);
       // margin-bottom: 1rem;
+      max-width: 65ch;
       width: 80%;
 
       h2 {
-        color: white;
+        color: #212121;
       }
 
-      .line {
-        height: 4px;
-        width: 90px;
-        background-color: #fff;
-        background-color: crimson;
-        margin-top: 1.5rem;
-        align-self: center;
+      p {
+        text-align: center;
       }
     }
 
     .cta {
-      color: #000000e6;
       font-weight: 500;
-      @include flexCenter(row);
-      background-color: crimson;
 
-      &:hover {
-        color: #fff;
+      @media screen and (min-width: 1200px) {
+        padding: 0.8rem 2.5rem;
+        margin-top: 1.5rem;
+      }
+
+      &:hover{
+        color: #fafafa;
+        border: 2px solid #fafafa;
       }
     }
   }
@@ -44,14 +49,19 @@
     padding: 1rem 0;
 
     .service_item {
-      @include flexCenter(column);
-      height: auto;
-      width: 80%;
-      padding: 1rem 1rem;
-      margin: 0.7rem 0;
+      flex-basis: 80%;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-direction: column;
+      padding: 30px;
+      border-radius: 10px;
+      background-image: url(../img/img-1.png);
+      background-size: cover;
+      margin: 10px 5%;
       position: relative;
-      overflow: hidden;
       z-index: 1;
+      overflow: hidden;
 
       @media only screen and (min-width: 768px) {
         flex-basis: 45%;
@@ -59,19 +69,43 @@
       }
 
       @media only screen and (min-width: 1200px) {
-        flex-basis: 22%;
-        margin: 1.5%;
-        height: 70%;
+        justify-content: space-around;
+        align-items: center;
+        height: 400px;
+        flex-basis: 20%;
+        margin: 0 1rem;
+        padding: 2.5rem 1.5rem;
       }
 
-      //* service item h2
+      // service item overlay
+      &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-image: linear-gradient(
+          60deg,
+          #29323c 0%,
+          #485563 100%
+        );
+        opacity: 0.9;
+        z-index: -1;
+      }
+
+      //* service item h3
 
       h3 {
         font-size: 1.5rem;
         font-weight: 500;
         color: crimson;
         margin-bottom: 0.7rem;
-        text-transform: initial;
+        text-align: left;
+
+        @media only screen and (min-width: 1200px) {
+          text-align: left;
+        }
       }
 
       p {
@@ -79,8 +113,11 @@
         font-size: 1.2rem;
         text-align: center;
         font-family: $font-family;
-        font-weight: 300;
-        padding: 0 1rem;
+        //font-weight: 300;
+
+        @media only screen and (min-width: 1200px) {
+          text-align: left;
+        }
       }
     }
   }

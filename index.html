@@ -62,7 +62,9 @@
                 <a href="#services" data-after="Services">Services</a>
               </li>
               <li>
-                <a href="#projects" data-after="Projects">Portolio</a>
+                <a href="#projects" data-after="Projects"
+                  >Portfolio</a
+                >
               </li>
               <li>
                 <a href="#contact" data-after="Contact">Contact</a>
@@ -81,11 +83,11 @@
     <section id="hero">
       <!--* hero container -->
       <div class="hero container">
-        <div>
+        <div class="greeting">
           <!--* greeting -->
           <h1>Hello, <span></span></h1>
-          <h1>My name is <span></span></h1>
-          <h1>Martin, <span></span></h1>
+          <h1>Am <span></span></h1>
+          <h1>Bob Martin, <span></span></h1>
           <!--* end greeting -->
 
           <!--* subheading -->
@@ -94,9 +96,7 @@
           </p>
           <!--* end sub heading -->
 
-          <!--* who I am -->
           <a href="#about" class="cta">Who I am</a>
-          <!--* end who I am -->
         </div>
       </div>
       <!--* end hero container -->
@@ -109,13 +109,19 @@
       <section class="services container">
         <header class="services_header">
           <h2 class="section_title">What <span>I</span> do</h2>
-          <div class="line"></div>
+          <!--<div class="line"></div>-->
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Et molestiae natus iusto doloremque facilis at debitis!
+            Obcaecati tempore minus maiores cum praesentium, sapiente
+            saepe culpa repudiandae asperiores magni!
+          </p>
         </header>
 
-        <!--* service items container -->
+        <!--* service items -->
         <section class="service_items_container">
           <!--* web design & development -->
-          <section class="service_item">
+          <section class="service_item web-design">
             <h3 style="text-align: center">
               Web design & development
             </h3>
@@ -129,30 +135,30 @@
           <!--* end web design & development -->
 
           <!--* wordpress -->
-          <section class="service_item">
+          <section class="service_item wordpress">
             <h3>Wordpress</h3>
             <p>
               Do you need a website and have a small budget, then
-              wordpress is the the right choice? Contact me and let's
-              give your business an online presence at an affordable
-              cost!
+              wordpress is the right choice for you? Contact me and
+              let's give your business an online presence at an
+              affordable cost!
             </p>
           </section>
           <!--* end wordpress -->
 
           <!--* consulting -->
-          <section class="service_item">
+          <section class="service_item consulting">
             <h3>Consulting</h3>
             <p>
-              Do you need a website and you don't know where to start! Should you even have a have a website for your business. You don't have to
-              worry. Give me a call or send me an email and let's
-              arrange a consultation session for you! You don't worry, I
-              got you!
+              Do you need a website and have know idea where to start?
+              You don't have to worry. Contact me and let's arrange a
+              consultation session for you! You don't worry, I got
+              you!
             </p>
           </section>
           <!--* end consulting -->
         </section>
-        <!--* end service items container -->
+        <!--* end service items  -->
 
         <!--*cta -->
         <a href="#projects" class="cta">See my work</a>
@@ -160,48 +166,6 @@
       <!--* end services container -->
     </section>
     <!--* end services section -->
-
-    <!--* about section -->
-    <section id="about">
-      <section class="about container">
-        <!--* image -->
-        <div class="image_section">
-          <div class="image_wrapper">
-            <img
-              src="./img/bob_martin_karugaba.JPG"
-              alt="picture of bob_martin_karugaba"
-            />
-          </div>
-        </div>
-        <!--* end image -->
-        <!--* info -->
-        <div class="about_info">
-          <h2 class="section_title">About <span> me</span></h2>
-          <p class="title">
-            Front End Web Developer, based out of Fort-portal, Uganda.
-          </p>
-          <p class="info">
-            I am a self taught Front End Web Developer who has been
-            writing code for two years now. I am proficient in
-            technologies like HTML5, CSS3, JavaScript, ReactJS. I've
-            been previleged to participate in programs like "Google
-            Africa Developer Scholarship" where I now serve as a
-            mentor and "Build for Small Developer Goals" all organised
-            by "Andela" which have contributed a great deal to the
-            skills that I have now.
-          </p>
-
-          <div class="about_btns_container">
-            <a href="#" class="cta"
-              ><i class="fab fa-linkedin icon linked-in"></i> LinkedIn
-              Profile</a
-            >
-          </div>
-        </div>
-        <!--* end info -->
-      </section>
-    </section>
-    <!--* end about section -->
 
     <!--* projects section -->
     <section id="projects">
@@ -231,13 +195,58 @@
             <h3>projects coming soon...</h3>
           </div>
         </section>
-        <a href="#" class="cta github-profile"
+        <a href="#" class="cta githubProfile__button"
           ><i class="fab fa-github icon github"></i>
           <span>Github Profile</span></a
         >
       </section>
     </section>
     <!--* end projects section -->
+
+    <!--* start about section -->
+    <section id="about">
+      <section class="about container">
+        <!--* image -->
+        <div class="image__wrapper">
+          <img
+            class="about__image"
+            src="./img/martin_karugaba_b-w.jpg"
+            alt="picture of bob_martin_karugaba"
+          />
+        </div>
+
+        <!--* start info -->
+        <div class="about__right">
+          <h2 class="section_title">About <span> me</span></h2>
+          <p class="title">
+            Front End Web Developer, based out of Fort-portal, Uganda.
+          </p>
+          <p class="info">
+            I am a self taught Front End Web Developer who has been
+            writing code for two years now. I am proficient in
+            technologies HTML5, CSS3, JavaScript, ReactJS. I've been
+            previleged to participate in programs like the "Google
+            Africa Developer Scholarship" where I now serve as a
+            mentor and "Build for Small Developer Goals" which has
+            contributed a great deal to the skills that I have now. I
+            also teach web development to the youths in my community
+            in my free time. I am fluent in the English language and am
+            very passionate about learning new technologies. I have
+            recently started learning Node.js. Looking forward to working with you.
+                                                            <p>-Bob Martin Karugaba</p>
+          </p>
+
+          <div class="about_btns_container">
+            <a href="#" class="cta"
+              ><i class="fab fa-linkedin icon linked-in"></i> LinkedIn
+              Profile</a
+            >
+          </div>
+        </div>
+        <!--* end info -->
+      </section>
+    </section>
+    <!--* end about section -->
 
     <!--* contact section -->
     <section id="contact">
@@ -253,8 +262,7 @@
             </div>
             <div class="info">
               <h1>Phone</h1>
-              <h2>+1 234 123 1234</h2>
-              <h2>+1 234 123 1234</h2>
+              <h2>+256-786-430-189</h2>
             </div>
           </div>
 
@@ -264,8 +272,7 @@
             </div>
             <div class="info">
               <h1>Email</h1>
-              <h2>martinkarugaba22@gmail.com</h2>
-              <h2>martinkarugabaweb@gmail.com</h2>
+              <h2>martinkarugaba21@gmail.com</h2>
             </div>
           </div>
 

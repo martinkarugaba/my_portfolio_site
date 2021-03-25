@@ -125,7 +125,8 @@ p {
 
 @media only screen and (min-width: 1200px) {
   #header .brand h1 {
-    font-size: 1.9rem;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
   }
 }
 
@@ -149,13 +150,7 @@ p {
   width: 100%;
   height: 100%;
   max-width: 1300px;
-  padding: 0.7em 0;
-}
-
-@media only screen and (min-width: 1200px) {
-  #header .nav-bar {
-    padding: 1.5rem 0;
-  }
+  padding: 1.2rem 0;
 }
 
 #header .nav-bar .nav-list ul {
@@ -216,7 +211,7 @@ p {
 
 @media only screen and (min-width: 1200px) {
   #header .nav-bar .nav-list ul a {
-    font-size: 1rem;
+    font-size: .9rem;
   }
 }
 
@@ -372,12 +367,6 @@ p {
   z-index: 1;
 }
 
-@media only screen and (min-width: 1200px) {
-  #hero {
-    padding: 0;
-  }
-}
-
 #hero .hero {
   min-width: 1200px;
   margin: 0 auto;
@@ -388,36 +377,21 @@ p {
   font-family: 'Roboto', sans-serif;
 }
 
-#hero .hero::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  z-index: -1;
-}
-
 @media only screen and (min-width: 1200px) {
   #hero .hero {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    padding: 5rem 0;
+    margin: 0;
   }
 }
 
-#hero .hero h1 {
+@media only screen and (min-width: 1200px) {
+  #hero .hero .greeting {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+#hero .hero .greeting h1 {
   font-family: 'Roboto', sans-serif;
   display: block;
   width: -webkit-fit-content;
@@ -434,14 +408,21 @@ p {
 }
 
 @media screen and (min-width: 768px) {
-  #hero .hero h1 {
+  #hero .hero .greeting h1 {
     font-size: 4rem;
     font-weight: 400;
     line-height: 4.3rem;
   }
 }
 
-#hero .hero h1 span {
+@media screen and (min-width: 1200px) {
+  #hero .hero .greeting h1 {
+    display: inline-block;
+    font-size: 4rem;
+  }
+}
+
+#hero .hero .greeting h1 span {
   position: absolute;
   left: 0;
   top: 0;
@@ -454,43 +435,56 @@ p {
           animation-delay: 0.3s;
 }
 
-#hero .hero h1:nth-child(1) {
+#hero .hero .greeting h1:nth-child(1) {
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
 }
 
-#hero .hero h1:nth-child(1) span {
+#hero .hero .greeting h1:nth-child(1) span {
   -webkit-animation-delay: 0.5s;
           animation-delay: 0.5s;
 }
 
-#hero .hero h1:nth-child(2) {
+#hero .hero .greeting h1:nth-child(2) {
   -webkit-animation-delay: 2s;
           animation-delay: 2s;
 }
 
-#hero .hero h1:nth-child(2) span {
+@media screen and (min-width: 1200px) {
+  #hero .hero .greeting h1:nth-child(2) {
+    text-transform: lowercase;
+    margin-left: 10px;
+  }
+}
+
+#hero .hero .greeting h1:nth-child(2) span {
   -webkit-animation-delay: 1.5s;
           animation-delay: 1.5s;
 }
 
-#hero .hero h1:nth-child(3) {
+#hero .hero .greeting h1:nth-child(3) {
   -webkit-animation: name_reveal ease forwards;
           animation: name_reveal ease forwards;
   -webkit-animation-delay: 3s;
           animation-delay: 3s;
 }
 
-#hero .hero h1:nth-child(3) span {
+@media screen and (min-width: 1200px) {
+  #hero .hero .greeting h1:nth-child(3) {
+    margin-left: 10px;
+  }
+}
+
+#hero .hero .greeting h1:nth-child(3) span {
   -webkit-animation-delay: 2.5s;
           animation-delay: 2.5s;
 }
 
-#hero .hero .sub-heading {
+#hero .hero .greeting .sub-heading {
   font-family: 'Roboto', sans-serif;
   color: #d8d8d8;
   font-size: 1.3rem;
-  font-weight: 300;
+  font-weight: 100;
   line-height: 2rem;
   margin: 0.2rem 0 0 0.2rem;
   letter-spacing: 0.01rem;
@@ -498,21 +492,31 @@ p {
 }
 
 @media only screen and (min-width: 768px) {
-  #hero .hero .sub-heading {
+  #hero .hero .greeting .sub-heading {
     font-size: 1.5rem;
     width: 100%;
   }
 }
 
 @media only screen and (min-width: 1200px) {
-  #hero .hero .sub-heading {
+  #hero .hero .greeting .sub-heading {
     letter-spacing: 0.05rem;
     color: #e9e9e9;
-    margin: 1rem 0;
-    margin-top: 1.5rem;
+    margin: 0.5rem 0 1rem 0;
     font-size: 1.5rem;
-    font-weight: 400;
+    font-weight: 100;
   }
+}
+
+#hero .hero .greeting::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -1;
 }
 
 #hero .hero section {
@@ -541,6 +545,13 @@ p {
 @media screen and (min-width: 768px) {
   #hero .cta {
     font-size: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #hero .cta {
+    margin: 0 0 0 0.2rem;
+    background: crimson;
   }
 }
 
@@ -610,7 +621,7 @@ p {
   max-width: 1500px;
   margin: 0 auto;
   padding: 3.2rem 1rem;
-  background: #ccc;
+  background: #fff;
 }
 
 @media screen and (min-width: 768px) {
@@ -624,7 +635,7 @@ p {
 
 @media screen and (min-width: 1200px) {
   #about .about {
-    padding: 6rem 1rem;
+    padding: 6rem 0rem;
   }
 }
 
@@ -644,70 +655,30 @@ p {
   background-color: #000000e6;
 }
 
-#about .about .image_section {
-  width: 230px;
-  height: 340px;
-  margin-top: 2.2rem;
+#about .about .image__wrapper {
+  position: relative;
+  margin: 1rem;
+  margin-top: 2rem;
   z-index: 1;
 }
 
-@media screen and (min-width: 768px) {
-  #about .about .image_section {
-    width: 600px;
-    height: 400px;
-    padding-left: 3.7rem;
-  }
+#about .about .image__wrapper .about__image {
+  border: 10px solid lightgray;
+  height: 350px;
 }
 
-#about .about .image_section .image_wrapper {
-  position: relative;
-  border: 10px solid #fff;
-  height: 100%;
-  width: 100%;
-}
-
-#about .about .image_section .image_wrapper::after {
+#about .about .image__wrapper::after {
   content: '';
   position: absolute;
   top: 20px;
-  left: -38px;
+  left: -30px;
   height: 98%;
   width: 98%;
-  border: 7px solid crimson;
+  border: 8px solid crimson;
   z-index: -10;
 }
 
-@media screen and (min-width: 768px) {
-  #about .about .image_section .image_wrapper::after {
-    left: -45px;
-    top: 24px;
-    width: 98%;
-    height: 98%;
-    border: 10px solid crimson;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  #about .about .image_section .image_wrapper {
-    -webkit-box-ordinal-group: 1;
-        -ms-flex-order: 0;
-            order: 0;
-  }
-}
-
-#about .about .image_section .image_wrapper img {
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-@media screen and (min-width: 768px) {
-  #about .about .image_section .image_wrapper img {
-    -o-object-fit: contain;
-       object-fit: contain;
-  }
-}
-
-#about .about .about_info {
+#about .about .about__right {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -726,14 +697,23 @@ p {
 }
 
 @media screen and (min-width: 768px) {
-  #about .about .about_info {
-    text-align: left;
-    padding: 1.9rem;
+  #about .about .about__right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: .5rem;
+    width: 50%;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  #about .about .about_info {
+  #about .about .about__right {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -746,12 +726,12 @@ p {
   }
 }
 
-#about .about .about_info .info {
+#about .about .about__right .info {
   margin: 1.5rem 0;
 }
 
 @media screen and (min-width: 1200px) {
-  #about .about .about_info .about_btns_container {
+  #about .about .about__right .about_btns_container {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -772,7 +752,7 @@ p {
   }
 }
 
-#about .about .about_info .cta {
+#about .about .about__right .cta {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -789,33 +769,37 @@ p {
 }
 
 @media screen and (min-width: 1200px) {
-  #about .about .about_info .cta {
+  #about .about .about__right .cta {
     margin: 1rem;
     margin-left: 0;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 2rem;
   }
 }
 
-#about .about .about_info .cta:hover {
+#about .about .about__right .cta:hover {
   color: #fff;
 }
 
-#about .about .about_info .cta .icon {
+#about .about .about__right .cta .icon {
   margin: 0 0.3rem 0 0;
 }
 
-#about .about .about_info .cta .linked-in {
+#about .about .about__right .cta .linked-in {
   color: #212121;
 }
 
-#about .about .about_info .cta .github {
+#about .about .about__right .cta .github {
   color: #212121;
 }
 
-#about .about .about_info .cta p {
+#about .about .about__right .cta p {
   color: #212121;
   font-size: 1rem;
   margin: 0;
+}
+
+#services {
+  max-width: 1500px;
 }
 
 #services .services {
@@ -823,10 +807,16 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-width: 1500px;
   margin: 0 auto;
   padding: 3.2rem 0;
-  background-color: #000000e6;
+  background-color: #fff;
+}
+
+@media screen and (min-width: 1200px) {
+  #services .services {
+    padding: 6rem 0;
+    margin: 0;
+  }
 }
 
 #services .services .services_header {
@@ -843,45 +833,32 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  max-width: 65ch;
   width: 80%;
 }
 
 #services .services .services_header h2 {
-  color: white;
+  color: #212121;
 }
 
-#services .services .services_header .line {
-  height: 4px;
-  width: 90px;
-  background-color: #fff;
-  background-color: crimson;
-  margin-top: 1.5rem;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+#services .services .services_header p {
+  text-align: center;
 }
 
 #services .services .cta {
-  color: #000000e6;
   font-weight: 500;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  background-color: crimson;
+}
+
+@media screen and (min-width: 1200px) {
+  #services .services .cta {
+    padding: 0.8rem 2.5rem;
+    margin-top: 1.5rem;
+  }
 }
 
 #services .services .cta:hover {
-  color: #fff;
+  color: #fafafa;
+  border: 2px solid #fafafa;
 }
 
 #services .service_items_container {
@@ -904,26 +881,29 @@ p {
 }
 
 #services .service_items_container .service_item {
+  -ms-flex-preferred-size: 80%;
+      flex-basis: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: auto;
-  width: 80%;
-  padding: 1rem 1rem;
-  margin: 0.7rem 0;
+  padding: 30px;
+  border-radius: 10px;
+  background-image: url(../img/img-1.png);
+  background-size: cover;
+  margin: 10px 5%;
   position: relative;
-  overflow: hidden;
   z-index: 1;
+  overflow: hidden;
 }
 
 @media only screen and (min-width: 768px) {
@@ -936,11 +916,29 @@ p {
 
 @media only screen and (min-width: 1200px) {
   #services .service_items_container .service_item {
-    -ms-flex-preferred-size: 22%;
-        flex-basis: 22%;
-    margin: 1.5%;
-    height: 70%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 400px;
+    -ms-flex-preferred-size: 20%;
+        flex-basis: 20%;
+    margin: 0 1rem;
+    padding: 2.5rem 1.5rem;
   }
+}
+
+#services .service_items_container .service_item::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  opacity: 0.9;
+  z-index: -1;
 }
 
 #services .service_items_container .service_item h3 {
@@ -948,7 +946,13 @@ p {
   font-weight: 500;
   color: crimson;
   margin-bottom: 0.7rem;
-  text-transform: initial;
+  text-align: left;
+}
+
+@media only screen and (min-width: 1200px) {
+  #services .service_items_container .service_item h3 {
+    text-align: left;
+  }
 }
 
 #services .service_items_container .service_item p {
@@ -956,8 +960,12 @@ p {
   font-size: 1.2rem;
   text-align: center;
   font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  padding: 0 1rem;
+}
+
+@media only screen and (min-width: 1200px) {
+  #services .service_items_container .service_item p {
+    text-align: left;
+  }
 }
 
 #projects .projects {
@@ -965,11 +973,16 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-width: 1200px;
   margin: 0 auto;
   padding: 2rem 0;
   background: #e7e5e5;
-  background: #F2F1DF;
+  background: #f2f1df;
+}
+
+@media screen and (min-width: 1200px) {
+  #projects .projects {
+    padding: 6rem 0;
+  }
 }
 
 #projects .projects .all_projects {
@@ -1057,7 +1070,7 @@ p {
           transform: scale(1.1);
 }
 
-#projects .projects .cta.github-profile {
+#projects .projects .githubProfile__button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1074,11 +1087,23 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 220px;
+  align-items: center;
 }
 
-#projects .projects .cta.github-profile .icon {
-  margin: 0 .5rem;
+@media screen and (min-width: 1200px) {
+  #projects .projects .githubProfile__button {
+    padding: .5rem 2rem;
+  }
+  #projects .projects .githubProfile__button:hover {
+    background-color: crimson;
+  }
+  #projects .projects .githubProfile__button:hover span {
+    color: #fff;
+  }
+}
+
+#projects .projects .githubProfile__button .icon {
+  margin: 0 0.3rem;
 }
 
 #projects .projects .project_info {
@@ -1136,7 +1161,7 @@ p {
 }
 
 #projects .projects .project_img::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -1165,6 +1190,12 @@ p {
 @media screen and (min-width: 768px) {
   #contact .contact {
     padding: 1rem 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #contact .contact {
+    padding: 6rem 0;
   }
 }
 
@@ -1203,6 +1234,25 @@ p {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  #contact .contact .contact_items {
+    padding: 1rem 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
 #contact .contact .contact_items .contact_item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1217,9 +1267,9 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100%;
+  width: 90%;
   padding: 1rem 0.5rem;
-  margin: 1rem 0;
+  margin: 1rem;
   text-align: left;
   border-radius: 0.6rem;
   -webkit-box-shadow: 0px 0px 18px 0px #0000002c;
@@ -1264,11 +1314,8 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 20%;
+  width: 10%;
+  height: 100%;
 }
 
 #contact .contact .contact_items .contact_item .icon_container .icon {
@@ -1293,7 +1340,8 @@ p {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-top: 0.8rem;
-  width: 80%;
+  width: 90%;
+  height: 100%;
 }
 
 @media screen and (min-width: 768px) {

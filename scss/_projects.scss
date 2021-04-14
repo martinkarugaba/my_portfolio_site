@@ -60,22 +60,24 @@
       @include flexCenter(row);
       justify-content: space-between;
       align-items: center;
+      color: crimson;
       //width: 220px;
 
       @media screen and (min-width: 1200px) {
-        padding: .5rem 2rem;
+        padding: 0.5rem 2rem;
 
         &:hover {
-          background-color: crimson;
+          background-color: transparent;
         }
 
-        &:hover span {
-          color: #fff;
-        }
+        //&:hover span {
+        //  color: #fff;
+        //}
       }
 
       .icon {
         margin: 0 0.3rem;
+        color: crimson;
       }
     }
 

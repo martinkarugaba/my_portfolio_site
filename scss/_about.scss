@@ -13,7 +13,7 @@
     }
 
     @media screen and (min-width: 1200px) {
-      padding: 6rem 0rem;
+      padding: 1rem 0rem;
     }
 
     .section_title {
@@ -43,6 +43,8 @@
 
       .about__image {
         border: 9px solid lightgray;
+        width: 220px;
+        height: 320px;
 
         @media screen and (min-width: 1200px) {
           height: 350px;
@@ -55,10 +57,14 @@
         position: absolute;
         top: 20px;
         left: -30px;
-        height: 98%;
+        height: 88%;
         width: 98%;
         border: 8px solid crimson;
         z-index: -10;
+
+        @media screen and (min-width: 1200px) {
+          height: 97%;
+        }
       }
     }
 
@@ -97,17 +103,20 @@
       //* about call to action
       .cta {
         @include flexCenter(row);
-        // width: 90%;
+        border: 2px solid crimson;
+        color: crimson;
+        //box-shadow: 0px 0px 18px 0px #0000002c;
+
+
+        &:hover {
+          //color: #fff;
+          background: transparent;
+        }
 
         @media screen and (min-width: 1200px) {
-          // width: 300px;
           margin: 1rem;
           margin-left: 0;
           padding: 0.5rem 2rem;
-        }
-
-        &:hover {
-          color: #fff;
         }
 
         .icon {
@@ -115,14 +124,10 @@
         }
 
         .linked-in {
-          color: #212121;
+          color: crimson;
         }
-        .github {
-          color: #212121;
-        }
-
         p {
-          color: #212121;
+          color: crimson;
           font-size: 1rem;
           margin: 0;
         }

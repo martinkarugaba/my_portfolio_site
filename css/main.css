@@ -364,7 +364,9 @@ p {
   background-position: top center;
   position: relative;
   height: 100vh;
+  width: 100% !important;
   z-index: 1;
+  overflow: hidden;
 }
 
 #hero .hero {
@@ -409,9 +411,9 @@ p {
 
 @media screen and (min-width: 768px) {
   #hero .hero .greeting h1 {
-    font-size: 4rem;
+    font-size: 3.2rem;
     font-weight: 400;
-    line-height: 4.3rem;
+    line-height: 3.5rem;
   }
 }
 
@@ -538,7 +540,7 @@ p {
 #hero .cta {
   margin: 1rem 0 0 0.2rem;
   color: #d4d4d4;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 500;
 }
 
@@ -635,7 +637,7 @@ p {
 
 @media screen and (min-width: 1200px) {
   #about .about {
-    padding: 6rem 0rem;
+    padding: 1rem 0rem;
   }
 }
 
@@ -665,6 +667,8 @@ p {
 
 #about .about .image__wrapper .about__image {
   border: 9px solid lightgray;
+  width: 220px;
+  height: 320px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -679,10 +683,16 @@ p {
   position: absolute;
   top: 20px;
   left: -30px;
-  height: 98%;
+  height: 88%;
   width: 98%;
   border: 8px solid crimson;
   z-index: -10;
+}
+
+@media screen and (min-width: 1200px) {
+  #about .about .image__wrapper::after {
+    height: 97%;
+  }
 }
 
 #about .about .about__right {
@@ -752,6 +762,12 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  border: 2px solid crimson;
+  color: crimson;
+}
+
+#about .about .about__right .cta:hover {
+  background: transparent;
 }
 
 @media screen and (min-width: 1200px) {
@@ -762,24 +778,16 @@ p {
   }
 }
 
-#about .about .about__right .cta:hover {
-  color: #fff;
-}
-
 #about .about .about__right .cta .icon {
   margin: 0 0.3rem 0 0;
 }
 
 #about .about .about__right .cta .linked-in {
-  color: #212121;
-}
-
-#about .about .about__right .cta .github {
-  color: #212121;
+  color: crimson;
 }
 
 #about .about .about__right .cta p {
-  color: #212121;
+  color: crimson;
   font-size: 1rem;
   margin: 0;
 }
@@ -800,8 +808,20 @@ p {
 
 @media screen and (min-width: 1200px) {
   #services .services {
-    padding: 6rem 0;
+    padding: 4rem 0;
     margin: 0;
+  }
+}
+
+#services .services .short__description {
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 1200px) {
+  #services .services .short__description {
+    max-width: 1000px;
   }
 }
 
@@ -833,11 +853,12 @@ p {
 
 #services .services .cta {
   font-weight: 500;
+  font-size: 1rem;
 }
 
 @media screen and (min-width: 1200px) {
   #services .services .cta {
-    padding: 0.8rem 2.5rem;
+    padding: 1rem 2.5rem;
     margin-top: 1.5rem;
   }
 }
@@ -928,7 +949,7 @@ p {
 #services .service_items_container .service_item h3 {
   font-size: 1.5rem;
   font-weight: 500;
-  color: crimson;
+  color: #fff;
   margin-bottom: 0.7rem;
 }
 
@@ -938,7 +959,7 @@ p {
   text-align: center;
   font-family: "Roboto", sans-serif;
   line-height: 30px;
-  font-weight: 100;
+  font-weight: 300;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -1067,22 +1088,21 @@ p {
       -ms-flex-pack: justify;
           justify-content: space-between;
   align-items: center;
+  color: crimson;
 }
 
 @media screen and (min-width: 1200px) {
   #projects .projects .githubProfile__button {
-    padding: .5rem 2rem;
+    padding: 0.5rem 2rem;
   }
   #projects .projects .githubProfile__button:hover {
-    background-color: crimson;
-  }
-  #projects .projects .githubProfile__button:hover span {
-    color: #fff;
+    background-color: transparent;
   }
 }
 
 #projects .projects .githubProfile__button .icon {
   margin: 0 0.3rem;
+  color: crimson;
 }
 
 #projects .projects .project_info {
@@ -1174,7 +1194,7 @@ p {
 
 @media screen and (min-width: 768px) {
   #contact .contact {
-    padding: 6rem 0;
+    padding: 0;
   }
 }
 
@@ -1278,6 +1298,13 @@ p {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  #contact .contact .contact_items .contact_item {
+    width: 50%;
+    height: 120px;
+  }
+}
+
 #contact .contact .contact_items .contact_item:hover {
   -webkit-box-shadow: 0px 0px 5px 0px #0000002c;
           box-shadow: 0px 0px 5px 0px #0000002c;
@@ -1319,6 +1346,7 @@ p {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-top: 0.8rem;
+  margin-left: 0.5rem;
   width: 90%;
   height: 100%;
 }
@@ -1349,6 +1377,7 @@ p {
 
 #footer {
   background: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  position: relative;
 }
 
 #footer .footer {
@@ -1400,4 +1429,57 @@ p {
   color: #fff;
   font-size: 1rem;
   margin-bottom: 1.1rem;
+}
+
+#footer .footer .backToTopBtn {
+  position: fixed;
+  right: 2%;
+  bottom: 4%;
+  color: white;
+  background-color: crimson;
+  padding: 0.5rem;
+  border-radius: 3px;
+  -webkit-animation: bounce 2s ease-in-out infinite;
+          animation: bounce 2s ease-in-out infinite;
+  visibility: hidden;
+  z-index: -100;
+}
+
+#footer .footer .showBackToTopBtn {
+  visibility: visible;
+  z-index: 100;
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+#footer .footer .address {
+  font-style: normal;
 }

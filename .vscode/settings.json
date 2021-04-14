@@ -5,7 +5,7 @@
     "prettier.tabWidth": 2,
     "prettier.printWidth": 70,
     "better-comments.multilineComments": true,
-    "editor.fontFamily": "SF Mono",
-    "terminal.integrated.fontFamily": "roboto mono",
+    "editor.fontFamily": "sf mono",
+    "terminal.integrated.fontFamily": "fira code",
     "html.format.wrapLineLength": 70
 }

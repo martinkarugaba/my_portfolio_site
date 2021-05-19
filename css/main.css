@@ -744,7 +744,9 @@ p {
   }
 }
 
-#about .about .about__right .info {
+#about .about .about__right p.info {
+  font-size: 1.25rem;
+  font-weight: 100;
   margin: 1.5rem 0;
 }
 
@@ -949,7 +951,7 @@ p {
 #services .service_items_container .service_item h3 {
   font-size: 1.5rem;
   font-weight: 500;
-  color: #fff;
+  color: #ee385d;
   margin-bottom: 0.7rem;
 }
 

@@ -6,6 +6,7 @@
     "prettier.printWidth": 70,
     "better-comments.multilineComments": true,
     "editor.fontFamily": "sf mono",
-    "terminal.integrated.fontFamily": "fira code",
-    "html.format.wrapLineLength": 70
+    "html.format.wrapLineLength": 70,
+    "terminal.integrated.fontFamily": "sf mono",
+    "terminal.integrated.fontSize": 16
 }

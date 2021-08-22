@@ -1,5 +1,5 @@
 #hero {
-  background-image: url(/img/hero-bg.png);
+  background-image: url('../img/keyboard.jpg');
   background-size: cover;
   background-position: top center;
   position: relative;
@@ -7,6 +7,7 @@
   width: 100% !important;
   z-index: 1;
   overflow: hidden;
+  //background-attachment: fixed;
 
   @media only screen and (min-width: 1200px) {
     //padding: 5rem 0;

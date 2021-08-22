@@ -359,7 +359,7 @@ p {
 }
 
 #hero {
-  background-image: url(/img/hero-bg.png);
+  background-image: url("../img/keyboard.jpg");
   background-size: cover;
   background-position: top center;
   position: relative;
@@ -745,7 +745,7 @@ p {
 }
 
 #about .about .about__right p.info {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   font-weight: 100;
   margin: 1.5rem 0;
 }
@@ -805,24 +805,25 @@ p {
           flex-direction: column;
   margin: 0 auto;
   padding: 3.2rem 0;
-  background-color: #fff;
+  background-color: lightgray;
 }
 
 @media screen and (min-width: 1200px) {
   #services .services {
-    padding: 4rem 0;
+    padding: 7rem 0;
     margin: 0;
   }
 }
 
 #services .services .short__description {
-  font-size: 1.2rem;
-  font-weight: 300;
+  font-size: 1rem;
+  font-weight: light;
   margin-bottom: 1rem;
 }
 
 @media screen and (min-width: 1200px) {
   #services .services .short__description {
+    font-size: 1.2rem;
     max-width: 1000px;
   }
 }
@@ -897,12 +898,12 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   padding: 30px;
   border-radius: 10px;
   background-image: url(../img/img-1.png);

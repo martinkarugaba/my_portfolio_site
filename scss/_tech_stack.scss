@@ -1,0 +1,29 @@
+#technologies {
+  padding: 5rem 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #011826;
+}
+
+.technologies-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+
+  .technology-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    .icon{
+      font-size: 5rem;
+
+      &:nth-child(1){
+        color: $primaryColor;
+      }
+    }
+  }
+}

@@ -63,7 +63,7 @@ p {
 }
 
 .section_title span {
-  color: crimson;
+  color: #13F2F2;
 }
 
 .cta {
@@ -72,7 +72,7 @@ p {
   font-size: 1rem;
   color: #000;
   background: transparent;
-  border: 2px solid crimson;
+  border: 2px solid #13F2F2;
   padding: 0.7rem 1.7rem;
   margin-top: 1rem;
   -webkit-transition: all 0.3s ease;
@@ -81,7 +81,7 @@ p {
 }
 
 .cta:hover {
-  background: crimson;
+  background: #13F2F2;
 }
 
 .icon {
@@ -97,7 +97,7 @@ p {
 }
 
 .brand h1 span {
-  color: crimson;
+  color: #13F2F2;
 }
 
 #header {
@@ -265,7 +265,7 @@ p {
 }
 
 #header .nav-bar .nav-list ul li:hover a {
-  color: crimson;
+  color: #13F2F2;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -409,7 +409,7 @@ p {
   background: #13F2F2;
   color: #011826;
   font-weight: 400;
-  font-size: 0.875rem;
+  font-size: 1.125rem;
   border-radius: 3px;
   border: none;
   outline: none;
@@ -428,6 +428,53 @@ p {
   margin-top: 4rem;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+#technologies {
+  padding: 5rem 8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #011826;
+}
+
+.technologies-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.technologies-container .technology-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.technologies-container .technology-item .icon {
+  font-size: 5rem;
+}
+
+.technologies-container .technology-item .icon:nth-child(1) {
+  color: #13F2F2;
 }
 
 #about .about {
@@ -474,7 +521,7 @@ p {
   font-family: "Roboto", sans-serif;
   font-size: 1.125rem;
   font-weight: 400;
-  color: crimson;
+  color: #13F2F2;
   text-align: left;
   line-height: 1.8rem;
   margin-top: 1.3rem;
@@ -510,7 +557,7 @@ p {
   left: -30px;
   height: 88%;
   width: 98%;
-  border: 8px solid crimson;
+  border: 8px solid #13F2F2;
   z-index: -10;
 }
 
@@ -589,8 +636,8 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  border: 2px solid crimson;
-  color: crimson;
+  border: 2px solid #13F2F2;
+  color: #13F2F2;
 }
 
 #about .about .about__right .cta:hover {
@@ -610,11 +657,11 @@ p {
 }
 
 #about .about .about__right .cta .linked-in {
-  color: crimson;
+  color: #13F2F2;
 }
 
 #about .about .about__right .cta p {
-  color: crimson;
+  color: #13F2F2;
   font-size: 1rem;
   margin: 0;
 }
@@ -979,7 +1026,7 @@ p {
       -ms-flex-pack: justify;
           justify-content: space-between;
   align-items: center;
-  color: crimson;
+  color: #13F2F2;
 }
 
 @media screen and (min-width: 1200px) {
@@ -993,7 +1040,7 @@ p {
 
 #projects .projects .githubProfile__button .icon {
   margin: 0 0.3rem;
-  color: crimson;
+  color: #13F2F2;
 }
 
 #projects .projects .project_info {
@@ -1030,7 +1077,7 @@ p {
   font-size: 2rem;
   font-weight: 300;
   margin-top: 0.6rem;
-  color: crimson;
+  color: #13F2F2;
 }
 
 #projects .projects .project_info p.project_about {
@@ -1216,7 +1263,7 @@ p {
 }
 
 #contact .contact .contact_items .contact_item .icon_container .icon {
-  color: crimson;
+  color: #13F2F2;
   font-size: 1.8rem;
   margin: 0;
   padding: 0;
@@ -1327,7 +1374,7 @@ p {
   right: 2%;
   bottom: 4%;
   color: white;
-  background-color: crimson;
+  background-color: #13F2F2;
   padding: 0.5rem;
   border-radius: 3px;
   -webkit-animation: bounce 2s ease-in-out infinite;

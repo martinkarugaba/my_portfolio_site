@@ -3,7 +3,7 @@
 
 $font-family: 'Roboto', sans-serif;
 $fontsize: 1.125rem;
-$primaryColor: crimson;
+$primaryColor: #13F2F2;
 
 @mixin flexCenter($flexDirection) {
   display: flex;
@@ -112,6 +112,8 @@ p {
 
 @import './nav-bar';
 @import './hero';
+@import './tech_stack';
+
 @import './about';
 @import './technologies';
 @import './projects';

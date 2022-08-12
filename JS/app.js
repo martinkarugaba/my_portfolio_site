@@ -19,7 +19,7 @@ document.addEventListener('scroll', () => {
   let scroll_position = window.scrollY;
 
   if (scroll_position > 50) {
-    header.style.backgroundColor = '#29323c';
+    header.style.backgroundColor = '#032340';
   } else {
     header.style.backgroundColor = 'transparent';
   }

@@ -6,25 +6,32 @@
       content="width=device-width, initial-scale=1.0"
     />
     <title>Martin Karugaba | Home</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
-      rel="stylesheet"
-    />
+
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@100;300;400;500&display=swap"
       rel="stylesheet"
     />
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Gugi&display=swap"
       rel="stylesheet"
     />
 
+    <!-- swiper css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
     <!-- Font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./font-awesome/all.css" />
     <link rel="stylesheet" href="./css/main.css" />
   </head>
@@ -36,8 +43,7 @@
         <nav class="nav-bar">
           <!--* Logo -->
           <div class="brand">
-            <a href="#hero"
-              >
+            <a href="#hero">
               <i class="fa-brands fa-connectdevelop"></i>
               <h1>
                 <span>M</span>ARTIN <br />
@@ -112,10 +118,10 @@
         <div class="greeting-container">
           <h1>Hi, I'm</h1>
           <h1>Martin Karugaba</h1>
-          <p class="info">
-            I build websites and web applications
-          </p>
-          <a href="#about" class="scroll-link cta download-resume">Download Resume</a>
+          <p class="info">I build websites and web applications</p>
+          <a href="#about" class="scroll-link cta download-resume"
+            >Download Resume</a
+          >
         </div>
 
         <div class="image-container">
@@ -123,6 +129,7 @@
             src="./img/martin-karugaba-head-shot-removebg.png"
             alt=""
           />
+        </div>
       </div>
       <!--* end hero container -->
     </section>
@@ -155,55 +162,33 @@
     </section>
     <!-- End Technologies -->
 
-    <!--todo >>>>>>>>>>>>>>>>>>>>>>>>>> start projects section >>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+    <!--todo >>>>>>>>>>>>> start projects section >>>>>>>-->
     <section id="projects">
-      <section class="projects container">
+    <!--<section class="projects container">
         <header class="projects_header">
           <h1 class="section_title">Recent <span>projects</span></h1>
-        </header>
-        <section class="projects-container">
-          <!--* first project item -->
-          <div class="project-item">
-            <div class="project_img">
-              <img src="./img/img-1.png" alt="img" />
-            </div>
-            <div class="project_info">
-              <h2>GPT3 Website</h2>
-              <p class="project_about">
-                This projects is about GPT3 API, it was designed by
-                ARSHAKIR
-              </p>
-              <div class="tech-stack"><span>React</span></div>
-              <div class="buttons">
-                <button>Source Code</button>
-                <button>Live</button>
-              </div>
-            </div>
-          </div>
-          <!--* end first project item -->
+        </header>-->
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">Slide 1</div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+        <div class="swiper-slide">Slide 4</div>
+        <div class="swiper-slide">Slide 5</div>
+        <div class="swiper-slide">Slide 6</div>
+        <div class="swiper-slide">Slide 7</div>
+        <div class="swiper-slide">Slide 8</div>
+        <div class="swiper-slide">Slide 9</div>
+        <div class="swiper-slide">Slide 10</div>
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
 
-          <!--* first project item -->
-          <div class="project-item">
-            <div class="project_img">
-              <img src="./img/img-1.png" alt="img" />
-            </div>
-            <div class="project_info">
-              <h2>GPT3 Website</h2>
-              <p class="project_about">
-                This projects is about GPT3 API, it was designed by
-                ARSHAKIR
-              </p>
-              <div class="tech-stack"><span>React</span></div>
-              <div class="buttons">
-                <button>Source Code</button>
-                <button>Live</button>
-              </div>
-            </div>
-          </div>
-          <!--* end first project item -->
+    <!--<section class="projects-container">-->
 
-          <!--* first project item -->
-          <div class="project-item">
+    <!--* first project item -->
+    <!--<div class="project-item">
             <div class="project_img">
               <img src="./img/img-1.png" alt="img" />
             </div>
@@ -219,40 +204,18 @@
                 <button>Live</button>
               </div>
             </div>
-          </div>
-          <!--* end first project item -->
-          
-          <!--* first project item -->
-          <div class="project-item">
-            <div class="project_img">
-              <img src="./img/img-1.png" alt="img" />
-            </div>
-            <div class="project_info">
-              <h2>GPT3 Website</h2>
-              <p class="project_about">
-                This projects is about GPT3 API, it was designed by
-                ARSHAKIR
-              </p>
-              <div class="tech-stack"><span>React</span></div>
-              <div class="buttons">
-                <button>Source Code</button>
-                <button>Live</button>
-              </div>
-            </div>
-          </div>
-        </section>
-        <a
+          </div>-->
+
+    <!--</section>-->
+    <!--<a
           href="https://github.com/martinKar-web"
           about="_blank"
           class="cta githubProfile__button"
           ><i class="fab fa-github icon github"></i>
           <span>Github Profile</span></a
-        >
-      </section>
+        >-->
     </section>
     <!--* end projects section -->
-
-
 
     <!--**************************** START ABOUT SECTION **********************-->
     <section id="about">
@@ -298,7 +261,6 @@
     </section>
     <!--*========================= END ABOUT SECTION =========================-->
 
-    
     <!--* contact section -->
     <section id="contact">
       <section class="contact container">
@@ -392,10 +354,18 @@
 
     <script src="/font-awesome/all.js"></script>
     <script src="./JS/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script type="module">
-      import Swiper from 'https://unpkg.com/swiper/swiper-bundle.esm.browser.min.js';
-
-      //const swiper = new Swiper(...)
+      //import Swiper from 'swiper/swiper-bundle.esm.js';
+      //import 'swiper/swiper-bundle.css';
+      var swiper = new Swiper('.swiper', {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+      });
     </script>
   </body>
 </html>

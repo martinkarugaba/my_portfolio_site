@@ -19,14 +19,14 @@
 
     .section_title {
       margin: 0;
-      // color: crimson;
+      // color: $primaryColor;
     }
 
     .title {
       font-family: $font-family;
       font-size: 1.125rem;
       font-weight: 400;
-      color: crimson;
+      color: $primaryColor;
       text-align: left;
       line-height: 1.8rem;
       margin-top: 1.3rem;
@@ -60,7 +60,7 @@
         left: -30px;
         height: 88%;
         width: 98%;
-        border: 8px solid crimson;
+        border: 8px solid $primaryColor;
         z-index: -10;
 
         @media screen and (min-width: 1200px) {
@@ -106,10 +106,9 @@
       //* about call to action
       .cta {
         @include flexCenter(row);
-        border: 2px solid crimson;
-        color: crimson;
+        border: 2px solid $primaryColor;
+        color: $primaryColor;
         //box-shadow: 0px 0px 18px 0px #0000002c;
-
 
         &:hover {
           //color: #fff;
@@ -127,10 +126,10 @@
         }
 
         .linked-in {
-          color: crimson;
+          color: $primaryColor;
         }
         p {
-          color: crimson;
+          color: $primaryColor;
           font-size: 1rem;
           margin: 0;
         }

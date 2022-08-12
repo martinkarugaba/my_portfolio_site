@@ -53,7 +53,7 @@
       right: 2%;
       bottom: 4%;
       color: white;
-      background-color: crimson;
+      background-color: $primaryColor;
       padding: 0.5rem;
       border-radius: 3px;
       animation: bounce 2s ease-in-out infinite;
@@ -79,7 +79,7 @@
       }
     }
 
-    .address{
+    .address {
       font-style: normal;
     }
   }

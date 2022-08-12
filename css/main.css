@@ -929,7 +929,7 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: #e7e5e5;
+  background: #011826;
   padding: 1rem 0.8rem;
 }
 
@@ -1123,7 +1123,7 @@ p {
 }
 
 #footer {
-  background: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  background: #011826;
   position: relative;
 }
 
@@ -1163,7 +1163,7 @@ p {
 }
 
 #footer .footer .social_icons .icon {
-  color: rgba(220, 20, 60, 0.7);
+  color: #0A89A6;
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }

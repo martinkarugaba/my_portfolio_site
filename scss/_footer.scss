@@ -1,5 +1,6 @@
 #footer {
-  background: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  //background: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  background: $backgroundColor;
   position: relative;
 
   .footer {
@@ -32,7 +33,7 @@
 
       .icon {
         // filter: grayscale(1);
-        color: rgba(220, 20, 60, 0.7);
+        color: $secondaryColor;
         transition: color 0.3s ease;
 
         &:hover {

@@ -1,176 +1,31 @@
-//
 #projects {
+  padding: 5rem 10rem;
+  background: $backgroundColor;
+
   .projects {
+    display: flex;
     flex-direction: column;
-    //max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem 0; // 100px 0
-    background: #e7e5e5;
-    background: #f2f1df;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
 
-    @media screen and (min-width: 1200px) {
-      padding: 6rem 0;
-    }
+  header{
+    width: 100%;
+    display: flex;  
+    justify-content: flex-start;
+    align-items: center;
+  }
 
-    .projects__container {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+  .projects-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 
-      @media screen and (min-width: 1200px) {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 6rem;
-        justify-content: center;
-        align-items: center;
-        padding: 5rem 5rem;
-
-        &:hover {
-          background-color: transparent;
-        }
-      }
-
-      .placeholder {
-        @include flexCenter(column);
-      }
-
-      // project item //
-      .project_item {
-        @include flexCenter(column);
-        flex: 1;
-        width: 90%;
-        margin: 1.25rem auto; // 20px auto
-        border-radius: 0.6rem;
-        overflow: hidden;
-
-        @media screen and (min-width: 768px) {
-          height: 400px;
-          margin: 0;
-          width: 100%;
-          border-radius: 0;
-          flex-direction: row;
-
-          &:nth-child(even) {
-            flex-direction: row-reverse;
-          }
-        }
-
-        @media screen and (min-width: 1200px) {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          flex-direction: column;
-          flex-basis: 360px;
-
-          &:nth-child(even) {
-            flex-direction: column;
-          }
-
-          .project_img {
-            width: 100%;
-            flex: 0.5;
-          }
-
-          .project_info {
-            flex: 0.5;
-            width: 100%;
-          }
-        }
-
-        .project_img img {
-          display: inline-block;
-          object-fit: cover;
-        }
-
-        &:hover .project_img img {
-          transform: scale(1.1);
-        }
-      }
-    }
-
-    .githubProfile__button {
-      @include flexCenter(row);
-      justify-content: space-between;
-      align-items: center;
-      color: $primaryColor;
-      //width: 220px;
-
-      @media screen and (min-width: 1200px) {
-        padding: 0.5rem 2rem;
-
-        &:hover {
-          background-color: transparent;
-        }
-
-        //&:hover span {
-        //  color: #fff;
-        //}
-      }
-
-      .icon {
-        margin: 0 0.3rem;
-        color: $primaryColor;
-      }
-    }
-
-    .project_info {
-      padding: 1rem;
-      //   flex-basis: 50%;
-      background: linear-gradient(60deg, #29323c 0%, #485563 100%);
-      display: flex;
-      align-items: flex-start;
-      justify-content: center;
-      flex-direction: column;
-      color: #fff;
-
-      @media screen and (min-width: 768px) {
-        height: 100%;
-      }
-
-      h2 {
-        font-size: 1rem;
-        font-weight: 500;
-      }
-
-      p.sub_heading {
-        font-size: 2rem;
-        font-weight: 300;
-        margin-top: 0.6rem;
-        color: $primaryColor;
-      }
-
-      p.project_about {
-        color: #fff;
-      }
-    }
-
-    // project item image
-    .project_img {
-      flex-basis: 50%;
-      //   height: 300px;
-      overflow: hidden;
-      position: relative;
-
-      @media screen and (min-width: 768px) {
-        height: 100%;
-      }
-
-      &::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        background: linear-gradient(60deg, #29323c 0%, #485563 100%);
-        opacity: 0.7;
-      }
-
-      img {
-        transition: transform 0.3s ease-in;
-      }
+    .project-item{
+      flex-basis: 22%;
     }
   }
+
 }

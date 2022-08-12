@@ -1,5 +1,5 @@
 #technologies {
-  padding: 5rem 8rem;
+  padding: 5rem 10rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,11 +18,18 @@
     align-items: center;
     height: 100%;
 
-    .icon{
+    .icon {
       font-size: 5rem;
+      cursor: pointer;
+      transition: all .5s ease-in-out``;
 
-      &:nth-child(1){
-        color: $primaryColor;
+      &:nth-child(1) {
+        color: #0a89a6;
+      }
+
+      &:hover {
+        transform: scale(1.2);
+        //color: $primaryColor;
       }
     }
   }
